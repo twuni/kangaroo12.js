@@ -1,0 +1,27 @@
+{
+  "name": "kangaroo12",
+  "version": "0.0.1",
+  "description": "The KangarooTwelve cryptographic fast hash algorithm in pure JavaScript.",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/twuni/kangaroo12.js.git"
+  },
+  "author": {
+    "email": "devin@canterberry.cc",
+    "name": "Devin Canterberry"
+  },
+  "license": "MIT",
+  "scripts": {
+    "build": "babel --no-babelrc --presets @babel/preset-env --no-highlight-code --no-comments --compact true --minified --source-maps false --out-dir lib --delete-dir-on-start --only '**/index.js' src && cp -vf package.json package-lock.json yarn.lock README.md LICENSE lib/",
+    "lint": "eslint src"
+  },
+  "devDependencies": {
+    "@babel/cli": "7.7.4",
+    "@babel/core": "7.7.4",
+    "@babel/preset-env": "7.7.4",
+    "babel-eslint": "10.0.3",
+    "eslint": "6.7.0",
+    "eslint-plugin-ante": "1.0.3"
+  }
+}
